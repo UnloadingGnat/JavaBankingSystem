@@ -1,5 +1,5 @@
 # Java Banking System
-A Banking System written in Java, designed with OOP in mind to maximise extensibility and maintainability.
+## A Banking System written in Java, designed with OOP in mind to maximise extensibility and maintainability.
 
 
 Summary of program: System starts with main menu, asking user whether they would like to: create account, find account, generate reports or quit.
