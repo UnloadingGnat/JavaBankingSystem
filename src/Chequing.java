@@ -38,6 +38,7 @@ public class Chequing extends Account {
      * @param withdrawAmount of money to withdraw from account
      * @return can money be withdrawn
      */
+    @Override
     public boolean withdraw(long withdrawAmount) {
         boolean transactionResult = false;
         this.transactionFee = 0;
@@ -57,6 +58,7 @@ public class Chequing extends Account {
      *
      * @param depositAmount amount
      */
+    @Override
     public void deposit(long depositAmount) {
         this.transactionFee = 0;
         if (this.money < 100000) {
@@ -69,6 +71,7 @@ public class Chequing extends Account {
     /**
      * Pay interest to chequing account
      */
+    @Override
     public void payInterest() {
         this.money = Math.round(this.money * Chequing.interestRate);
     }

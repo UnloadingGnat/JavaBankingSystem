@@ -84,12 +84,10 @@ public class Main {
                 // Create new chequing account
                 if (accountType == 1) {
                     accounts.add(new Chequing(accountHolderName, accounts.size()));
-
                 }
                 // Create new savings account
                 else if (accountType == 2) {
                     accounts.add(new Savings(accountHolderName, accounts.size()));
-
                 }
                 // Create new senior/child account
                 else {

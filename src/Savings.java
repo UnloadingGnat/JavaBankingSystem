@@ -39,6 +39,7 @@ public class Savings extends Account {
      * @param withdrawAmount of money to withdraw from account
      * @return can money be withdrawn
      */
+    @Override
     public boolean withdraw(long withdrawAmount) {
         this.transactionFee = 0;
         boolean transactionResult = false;
@@ -58,6 +59,7 @@ public class Savings extends Account {
      *
      * @param depositAmount amount to deposit
      */
+    @Override
     public void deposit(long depositAmount) {
         this.transactionFee = 0;
         if (this.numOfTransactions >= 5) {
@@ -70,6 +72,7 @@ public class Savings extends Account {
     /**
      * Pay interest to savings account
      */
+    @Override
     public void payInterest() {
         this.money = Math.round(this.money * Savings.interestRate);
     }

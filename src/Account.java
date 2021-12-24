@@ -4,8 +4,8 @@
 
 public class Account {
     // Attributes
-    protected String accountName;
-    protected int accountNum;
+    protected final String accountName;
+    protected final int accountNum;
     protected long money;
     protected int accountType;
     protected int transactionFee;

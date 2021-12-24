@@ -35,6 +35,7 @@ public class SeniorChild extends Account {
     /**
      * Pay interest to senior/child account
      */
+    @Override
     public void payInterest() {
         this.money = Math.round(this.money * SeniorChild.interestRate);
     }
