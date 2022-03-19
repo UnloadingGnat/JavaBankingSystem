@@ -2,7 +2,6 @@
 ## A Banking System written in Java, designed with OOP in mind to maximize extensibility and maintainability.
 
 @author UnlaodingGnat
-@course ICS4U
 @date 2021/12/08
 
 
